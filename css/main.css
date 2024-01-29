@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -14,6 +14,25 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+#skipnav{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#skipnav a{
+  font-weight: bold;
+  padding: 15px 5px;
+  position: absolute;
+  top: -50px;
+  text-decoration: none;
+}
+
+#skipnav a:focus{
+  outline: 5px solid #FFF;
+  top: 0;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -21,7 +40,12 @@ h6 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#main-content{
+  margin: 15px;
 }
 
 .main-nav ul {
@@ -50,6 +74,7 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  margin-top: 15px;
 }
 
 form textarea {
@@ -57,6 +82,8 @@ form textarea {
   max-height: 150px;
   height: 150px;
   resize: none;
+  margin-right: 25px;
+  margin-top: 15px;
 }
 
 form button {
@@ -68,4 +95,5 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+  margin: 15px;
 }
